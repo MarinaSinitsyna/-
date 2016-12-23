@@ -1,0 +1,28 @@
+#include <stdio.h>
+#include <math.h>
+int main( void )
+{
+float C;
+const double PI = 3.14159265;
+char D;
+printf("then enter the angle symbol D or R.\n");
+printf("D-degrees\n");
+printf("R-radians\n");
+printf("The entry should look: 43.00D or 43.00R\n");
+scanf("%f%c",&C,&D);
+switch (D)
+{
+case 'D':
+		C=C*180/PI;
+printf("radians=%f\n",C);
+	
+break;
+case 'R':
+
+	C=C*PI/180;
+printf("degrees=%f\n",C);
+
+break;
+}
+return 0;
+}
