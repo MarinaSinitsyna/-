@@ -1,0 +1,22 @@
+#include <stdlib.h>
+#include <stdio.h>
+#include <time.h>
+int main ()
+{   
+    int a;
+    srand(time(NULL));
+    int i=rand() % 100 + 1;
+    printf("guess the number\n");  //угадайте число
+    scanf("%d",&a);
+    while (a!=i)
+    {
+    scanf("%d",&a);
+    if (a>i)
+    printf("less");  //Меньше
+    else if (a<i)
+    printf("larger");//больше
+    else if(a==i)
+    printf("guessed");//угадали
+    }
+    return 0;
+}
